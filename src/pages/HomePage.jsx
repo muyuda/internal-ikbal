@@ -4,6 +4,7 @@ import Pricing from '../components/Pricing';
 import Portfolio from '../components/Portfolio';
 import Team from '../components/Team';
 import Contact from '../components/Contact';
+import Footer from '../components/Footer'; // Added import for Footer
 
 // We need to wrap the Hero component to give it an ID for scroll spying
 const HeroSection = () => (
@@ -21,6 +22,7 @@ export default function HomePage() {
       <Portfolio />
       <Team />
       <Contact />
+      <Footer /> {/* Added Footer component */}
     </>
   );
 }
