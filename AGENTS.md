@@ -73,3 +73,11 @@ Designer / Product (Reference)
 - Gunakan tailwind-merge dan clsx untuk manajemen conditional classes yang lebih bersih.
 - Simpan aset gambar dari template asli di folder public/assets.
 - Implementasi Global Search (Command Palette) untuk mempermudah navigasi user internal.
+
+## Code Conventions
+- Gunakan functional components only
+- Wajib pakai arrow function untuk komponen
+- Props harus di-destructure di parameter
+- Maksimal 1 komponen utama per file
+- Hindari inline styles
+- Semua animation pakai Framer Motion, bukan CSS manual

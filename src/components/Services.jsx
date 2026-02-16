@@ -39,33 +39,29 @@ const ServiceCard = ({ item, index }) => (
     whileInView="onscreen"
     viewport={{ once: true, amount: 0.3 }}
     variants={cardVariants}
-    className="bg-surface-dark rounded-2xl p-8 group relative overflow-hidden"
+    className="bg-white p-8 rounded-3xl shadow-md hover:shadow-xl transition-shadow duration-300 text-center"
   >
-    <div className="flex justify-start mb-6">
-      <div className="bg-accent-green/20 p-4 rounded-full">
-        <item.icon className="text-accent-green h-8 w-8" />
-      </div>
+    <div className="w-24 h-24 mx-auto mb-6 flex items-center justify-center rounded-full bg-blue-100">
+      <item.icon className="text-[#007bff] h-10 w-10" />
     </div>
-    <h3 className="text-2xl font-bold text-white mb-3">{item.name}</h3>
-    <p className="text-slate-400 leading-relaxed">{item.description}</p>
-    {/* Hover effect */}
-    <div className="absolute bottom-0 left-0 h-1 w-full bg-accent-green transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-left"></div>
+    <h3 className="text-2xl font-bold text-[#03045E] mb-3">{item.name}</h3>
+    <p className="text-gray-600 leading-relaxed">{item.description}</p>
   </motion.div>
 );
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 bg-body-dark">
+    <section id="services" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.5 }}
-            className="text-center mb-16"
+            className="text-center mb-10"
         >
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">Our Services</h2>
-          <p className="text-slate-400 max-w-3xl mx-auto text-lg">
+          <h2 className="text-4xl lg:text-5xl font-bold text-[#03045E] mb-3">Our Services</h2>
+          <p className="text-gray-500 max-w-2xl mx-auto text-lg">
             An overview of our internal operations, showcasing our projects, services, and dedicated team members.
           </p>
         </motion.div>

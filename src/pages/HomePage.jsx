@@ -1,5 +1,6 @@
 import Hero from '../components/Hero';
 import Services from '../components/Services';
+import Pricing from '../components/Pricing';
 import Portfolio from '../components/Portfolio';
 import Team from '../components/Team';
 import Contact from '../components/Contact';
@@ -16,6 +17,7 @@ export default function HomePage() {
     <>
       <HeroSection />
       <Services />
+      <Pricing />
       <Portfolio />
       <Team />
       <Contact />
